@@ -1,0 +1,51 @@
+body {
+  background-image: url(imgs/slider-left-dec.png);
+  background-repeat: no-repeat;
+  background-size: 900px;
+}
+navBar {
+  top: 0;
+  left: 0;
+  display: flex;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+}
+.navImg {
+  padding-left: 100px;
+  margin-right: auto;
+}
+.navItem {
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+.signBtn,
+.applBtn,
+.googleBtn {
+  border-radius: 30px;
+  background-color: aqua;
+  cursor: pointer;
+  padding: 12px;
+}
+main {
+  margin-top: 100px;
+}
+.mainH1 {
+  float: inline-start;
+  width: 550px;
+  padding-top: 200px;
+  padding-left: 90px;
+  font-size: 50px;
+}
+.mainP {
+  padding-left: 90px;
+  width: 550px;
+  font-size: 20px;
+}
+/* .mainImg {
+} */
+
+/* .applBtn {
+} */
