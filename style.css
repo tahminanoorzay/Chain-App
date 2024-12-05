@@ -16,19 +16,7 @@ navBar {
   padding-left: 100px;
   margin-right: auto;
 }
-.navItem {
-  padding: 5px;
-  margin-left: 10px;
-  margin-right: 50px;
-}
-.signBtn,
-.applBtn,
-.googleBtn {
-  border-radius: 30px;
-  background-color: aqua;
-  cursor: pointer;
-  padding: 12px;
-}
+
 main {
   margin-top: 100px;
 }
@@ -49,3 +37,19 @@ main {
 
 /* .applBtn {
 } */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
