@@ -1,55 +1,177 @@
-body {
+/* body {
+  background-color: beige;
+} */
+
+/* Navbar section section  */
+.containerNavbar {
   background-image: url(imgs/slider-left-dec.png);
   background-repeat: no-repeat;
-  background-size: 900px;
+  background-size: 70%;
+  margin: 0;
+  height: 850px;
 }
-navBar {
+nav {
   top: 0;
   left: 0;
   display: flex;
   position: fixed;
-  height: 100px;
+  height: 80px;
   width: 100%;
   align-items: center;
+  padding: 0px;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  text-decoration: none;
+  list-style: none;
+  color: black;
 }
 .navImg {
   padding-left: 100px;
   margin-right: auto;
 }
-
-main {
-  margin-top: 100px;
+li {
+  display: inline-block;
 }
+
+.signBtn {
+  border-radius: 20px;
+}
+
+/* Main section  */
 .mainH1 {
-  float: inline-start;
+  display: inline-flex;
   width: 550px;
-  padding-top: 200px;
-  padding-left: 90px;
+  margin-top: 200px;
+  margin-left: 90px;
   font-size: 50px;
-}
-.mainP {
-  padding-left: 90px;
-  width: 550px;
-  font-size: 20px;
-}
-/* .mainImg {
-} */
-
-/* .applBtn {
-} */
-
-.navbar {
-  padding: 0 0 4.5rem;
-}
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
   font-weight: bold;
 }
-.nav-item {
-  padding: 0 18px;
+.mainP {
+  line-height: 30px;
+  padding-left: 90px;
+  width: 550px;
+  font-size: 15px;
 }
-.nav-link {
-  font-size: 1.2rem;
-  font-family: "Montserrat-light";
+.mainImg {
+  width: 40%;
+  margin-top: -360px;
+  margin-left: 700px;
+  display: inline-flex;
+}
+
+.mainBtn {
+  margin-left: 100px;
+  border-radius: 20px;
+}
+/* Services & Features section  */
+.servicesFeatures {
+  display: inline-flex;
+  margin: 0 0 0 80px;
+  background-image: url(imgs/services-right-dec.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 90%;
+}
+.servicesFeaturesTxt {
+  padding: 140px;
+  padding-left: 10px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  height: 350px;
+}
+.servicesFeaturesH2 {
+  color: rgb(21, 91, 205);
+  font-weight: bold;
+}
+.servicesFeaturesP {
+  line-height: 30px;
+  padding-left: 90px;
+  width: 550px;
+  font-size: 15px;
+}
+
+/* Cards section  */
+
+.containerCard {
+  margin-top: 30px;
+  height: 400px;
+  padding: 50px;
+}
+.img-card {
+  align-items: center;
+}
+.card-item {
+  padding: 40px;
+  box-shadow: 20px;
+  border-radius: 20px 80px 20px 20px;
+}
+.card-item:hover {
+  background-image: url(/imgs/client-bg.png);
+  .card-title {
+    color: aliceblue;
+  }
+  .card-text {
+    color: aliceblue;
+  }
+  .card-item:hover img {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+}
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.card-text {
+  color: gray;
+  padding-left: 0px;
+  text-align: left;
+  margin: auto;
+  width: 200px;
+}
+.readMoreTxt {
+  margin-top: 10px;
+  color: rgb(21, 91, 205);
+  text-decoration: none;
+}
+
+/* About section  */
+
+.containerAbout {
+  background-image: url(/imgs/services-left-dec.png);
+  background-repeat: no-repeat;
+  height: 500px;
+  text-align: left;
+  display: block;
+}
+.containerAboutH2 {
+  margin-top: 250px;
+  margin-left: 50px;
+  display: inline-flex;
+}
+.aboutImgHeading {
+  display: block;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.aboutP {
+  color: gray;
+  padding-left: 50px;
+  text-align: left;
+  margin-top: 15px;
+  width: 500px;
+  font-size: 15px;
+}
+.aboutImg {
+  background-image: url(/imgs/about-bg.jpg);
+  background-repeat: repeat;
+  background-size: 60%;
+  display: inline-flex;
+  margin-top: -150px;
+  margin-left: 600px;
 }

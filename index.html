@@ -5,44 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Links -->
+
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Fontawesome Link -->
     <link rel="stylesheet" href="/fontawesome-free-6.7.1-web/css/all.css" />
     <!-- Style CSS Link -->
     <link rel="stylesheet" href="style.css" />
     <title>Chain App</title>
   </head>
-  <body>
-    <!-- NavBar section -->
-    <navBar class="navbar">
-      <img class="navImg img" src="/imgs/logo.png" alt="" />
-      <a href="#" class="link">Home</a>
-      <a href="#" class="link">Services</a>
-      <a href="#" class="link">About</a>
-      <a href="#" class="link">Pricing</a>
-      <a href="#" class="link">Newsletter</a>
-      <button class="btn btn-primary">
-        <i class="fas fa-right-to-bracket"></i> Sign In Now
-      </button>
-    </navBar>
-    <!-- Main section -->
-    <main>
-      <h1 class="mainH1">Get The Latest App From App Stores</h1>
-      <p class="mainP">
-        Chain App Dev is an app landing page HTML5 template based on Bootstrap
-        v5.1.3 CSS layout provided by TemplateMo, a great website to download
-        free CSS templates.
-      </p>
-      <button class="btn btn-primary">
-        free Quote <i class="fa-brands fa-apple"></i>
-      </button>
-      <button class="btn btn-primary">
-        free Quote <i class="fa-brands fa-google-play"></i>
-      </button>
-      <img class="mainImg" src="/imgs/pricing-table-01.png" alt="" />
-    </main>
 
+  <body>
+    <!-- Navbar section -->
+    <div class="containerNavbar">
+      <nav class="navbar navbar-expand-lg">
+        <a href="#"> <img class="navImg img" src="/imgs/logo.png" alt="" /></a>
+        <div class="collapse navbar-collapse justify-content-end">
+          <!-- <button><i class="fas fa-bars"></i></button> -->
+          <ul>
+            <li><a href="#" class="navbar">Home</a></li>
+            <li><a href="#" class="navbar">Services</a></li>
+            <li><a href="#" class="navbar">About</a></li>
+            <li><a href="#" class="navbar">Pricing</a></li>
+            <li><a href="#" class="navbar">Newsletter</a></li>
+          </ul>
+          <button class="btn btn-primary signBtn">
+            <i class="fas fa-right-to-bracket"></i> Sign In Now
+          </button>
+        </div>
+      </nav>
+      <hr />
+
+      <!-- Main section -->
+
+      <main>
+        <h1 class="mainH1 text-dark">Get The Latest App From App Stores</h1>
+        <p class="mainP">
+          Chain App Dev is an app landing page HTML5 template based on Bootstrap
+          v5.1.3 CSS layout provided by TemplateMo, a great website to download
+          free CSS templates.
+        </p>
+        <button class="btn btn-primary mainBtn">
+          free Quote <i class="fa-brands fa-apple"></i>
+        </button>
+        <button class="btn btn-primary mainBtn">
+          free Quote <i class="fa-brands fa-google-play"></i>
+        </button>
+        <img class="mainImg" src="/imgs/slider-dec.png" alt="" />
+      </main>
+    </div>
+
+    <!-- Services & Features  section -->
+    <div class="servicesFeatures">
+      <div class="servicesFeaturesTxt">
+        <h2>
+          Amazing
+          <span class="servicesFeaturesH2">Services & Features</span> for you
+        </h2>
+        <img src="/imgs/heading-line-dec.png" />
+        <p class="servicesFeaturesP">
+          If you need the greatest collection of HTML templates for your
+          business, please visit
+          <span class="servicesFeaturesH2">TooCSS</span> Blog. If you need to
+          have a contact form PHP script, go to
+          <span class="servicesFeaturesH2">our contact page</span> for more
+          information.
+        </p>
+      </div>
+    </div>
+
+    <!-- Cards section -->
+    <div class="containerCard">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card card-item">
+            <img
+              src="/imgs/service-icon-01.png"
+              alt=""
+              class="card-img-top img-card"
+              style="width: 50px; height: 50px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">App Maintenance</h5>
+              <p class="card-text">
+                You are not allowed to redistribute this template ZIP file on
+                any other website.
+              </p>
+              <a class="card-text readMoreTxt" href="#"
+                >Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card-item">
+            <img
+              src="/imgs/service-icon-02.png"
+              alt=""
+              class="card-img-top img-card"
+              style="width: 50px; height: 50px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rocket Speed of App</h5>
+              <p class="card-text">
+                You are allowed to use the Chain App Dev HTML template. Feel
+                free to modify or edit this layout.
+              </p>
+              <a class="card-text readMoreTxt" href="#"
+                >Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card-item">
+            <img
+              src="/imgs/service-icon-03.png"
+              alt=""
+              class="card-img-top img-card"
+              style="width: 50px; height: 50px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Multi Workflow Idea</h5>
+              <p class="card-text">
+                If this template is beneficial for your work, please support us
+                <span class="servicesFeaturesH2"> little via PayPal</span>.
+                Thank you.
+              </p>
+              <a class="card-text readMoreTxt" href="#"
+                >Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card card-item">
+            <img
+              src="/imgs/service-icon-04.png"
+              alt=""
+              class="card-img-top img-card"
+              style="width: 50px; height: 50px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">24/7 Help & Support</h5>
+              <p class="card-text">
+                Lorem ipsum dolor consectetur adipiscing elit sedder
+                williamsburg photo booth quinoa and fashion axe.
+              </p>
+              <a class="card-text readMoreTxt" href="#"
+                >Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div class="containerAbout">
+      <h2 class="containerAboutH2">
+        About <span class="servicesFeaturesH2"> What We Do </span> & Who We Are
+      </h2>
+      <img class="aboutImgHeading" src="/imgs/heading-line-dec.png" alt="" />
+      <p class="aboutP">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod
+        tempor incididunt ut labore et dolore magna.
+      </p>
+      <div class="aboutImg">
+        <img src="/imgs/about-right-dec.png" alt="" />
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
