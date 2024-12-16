@@ -6,7 +6,7 @@
 
     <!-- Links -->
 
-    <!-- Bootstrap Link -->
+    <!-- Bootstrap Links -->
     <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="/fontawesome-free-6.7.1-web/css/all.css" />
     <!-- Style CSS Link -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Java Script Link -->
+    <script src="script.js"></script>
     <title>Chain App</title>
   </head>
 
@@ -510,7 +512,7 @@
             <div class="">
               <h5 class="card-title">Standard Plan App</h5>
               <img src="/imgs/pricing-table-01.png" alt="" />
-              <ul>
+              <ul class="price-ul">
                 <li class="priceP">Lorem Ipsum Dolores</li>
                 <li class="priceP">50 TB of Storage</li>
                 <li class="non-function">Life-time Support</li>
@@ -531,7 +533,7 @@
             <div class="">
               <h5 class="card-title card-title-2">Business Plan App</h5>
               <img src="/imgs/pricing-table-01.png" alt="" />
-              <ul>
+              <ul class="price-ul">
                 <li class="priceP">Lorem Ipsum Dolores</li>
                 <li class="priceP">20 TB of Storage</li>
                 <li class="priceP">Life-time Support</li>
@@ -570,43 +572,43 @@
     </div>
 
     <!-- ّFooter section -->
-    <!-- <footer id="newsletter">
+
+    <footer class="footer-container">
       <div class="container">
-        <div class="row">
+        <div class="row footer-top-section">
           <div class="col-lg-8 offset-lg-2">
-            <div class="section-heading">
-              <h4>Join our mailing list to receive the news & latest trends</h4>
+            <div class="footer-title">
+              <h4>Join Our Mailing List To Receive The News & Latest Trends</h4>
             </div>
           </div>
-          <div class="col-lg-6 offset-lg-3">
-            <form id="search" action="#" method="GET">
+          <div class="search col-lg-6 offset-lg-3">
+            <div>
               <div class="row">
                 <div class="col-lg-6 col-sm-6">
-                  <fieldset>
+                  <div>
                     <input
                       type="address"
-                      name="address"
                       class="email"
                       placeholder="Email Address..."
-                      autocomplete="on"
                       required
                     />
-                  </fieldset>
+                  </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
-                  <fieldset>
-                    <button type="submit" class="main-button">
+                  <div>
+                    <button type="submit">
                       Subscribe Now <i class="fa fa-angle-right"></i>
                     </button>
-                  </fieldset>
+                  </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-lg-3">
-            <div class="footer-widget">
+            <div class="footer-items">
               <h4>Contact Us</h4>
               <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
               <p><a href="#">010-020-0340</a></p>
@@ -614,16 +616,16 @@
             </div>
           </div>
           <div class="col-lg-3">
-            <div class="footer-widget">
+            <div class="footer-items">
               <h4>About Us</h4>
-              <ul>
+              <ul class="footer-ul">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Testimonials</a></li>
                 <li><a href="#">Pricing</a></li>
               </ul>
-              <ul>
+              <ul class="footer-ul">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Testimonials</a></li>
                 <li><a href="#">Pricing</a></li>
@@ -631,16 +633,16 @@
             </div>
           </div>
           <div class="col-lg-3">
-            <div class="footer-widget">
+            <div class="footer-items">
               <h4>Useful Links</h4>
-              <ul>
+              <ul class="footer-ul">
                 <li><a href="#">Free Apps</a></li>
                 <li><a href="#">App Engine</a></li>
                 <li><a href="#">Programming</a></li>
                 <li><a href="#">Development</a></li>
                 <li><a href="#">App News</a></li>
               </ul>
-              <ul>
+              <ul class="footer-ul">
                 <li><a href="#">App Dev Team</a></li>
                 <li><a href="#">Digital Web</a></li>
                 <li><a href="#">Normal Apps</a></li>
@@ -648,10 +650,10 @@
             </div>
           </div>
           <div class="col-lg-3">
-            <div class="footer-widget">
+            <div class="footer-items">
               <h4>About Our Company</h4>
-              <div class="logo">
-                <img src="assets/images/white-logo.png" alt="" />
+              <div class="white-logo">
+                <img src="/imgs/white-logo.png" alt="" />
               </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -664,19 +666,12 @@
               <p>
                 Copyright © 2022 Chain App Dev Company. All Rights Reserved.
                 <br />Design:
-                <a
-                  href="https://templatemo.com/"
-                  target="_blank"
-                  title="css templates"
-                  >TemplateMo</a
-                >
+                <a href="#">TemplateMo</a>
               </p>
             </div>
           </div>
         </div>
       </div>
-    </footer> -->
-
-    <script src="script.js"></script>
+    </footer>
   </body>
 </html>

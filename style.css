@@ -14,7 +14,6 @@
 .navbar {
   padding: 10px;
   z-index: 1000;
-  transition: background-color 0.3s;
 }
 .navbar.scrolled {
   background-color: #fff;
@@ -266,6 +265,9 @@ h2 {
   border-radius: 50px;
   /* width: 350px; */
 }
+.price-ul {
+  list-style-type: none;
+}
 .prices-card-1 {
   width: 330px;
   height: 600px;
@@ -290,8 +292,9 @@ h2 {
 
 .pricesCardsH1 {
   display: inline-flex;
-  /* margin-left: -30px; */
-  color: #f0f8ff;
+  margin-bottom: 50px;
+  margin-left: -200px;
+  color: #ffffff;
 }
 .non-function {
   color: #afafaf;
@@ -305,41 +308,28 @@ h2 {
 .card-Btn {
   border-radius: 20px;
 }
+.priceCardsContainer .card-title {
+  margin: 10px 20px;
+}
 
 /* Footer section */
 
-footer {
-  background-image: url(imgs/footer-bg.png);
-  background-position: center top;
+.footer-container {
+  background-image: url(/imgs/footer-bg.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 130px;
   padding-top: 300px;
   padding-bottom: 60px;
 }
-
-footer .section-heading {
-  margin-bottom: 45px;
-  font-weight: bold;
-}
-
-footer .section-heading h4 {
-  line-height: 45px;
-  color: #fff;
-  margin-left: 13%;
-  margin-right: 13%;
-  text-align: center;
-}
-
-footer #search {
+.search {
   margin-bottom: 80px;
 }
-
-footer #search input::placeholder {
+.search input::placeholder {
   color: #fff;
 }
-
-footer #search input {
+.search input {
   font-size: 15px;
   color: #fff;
   outline: none;
@@ -349,82 +339,65 @@ footer #search input {
   border-bottom: 1px solid #fff;
   width: 100%;
 }
-
-footer #search button {
+.search button {
   height: 46px;
   border-radius: 23px;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
   width: 100%;
-  transition: all 0.5s;
 }
-
-footer #search button:hover {
+.search button:hover {
   background-color: #fff;
   color: #4b8ef1;
 }
-
-.footer-widget .logo img {
-  max-width: 96px;
-  margin-bottom: 30px;
+.footer-title {
+  margin-bottom: 45px;
+  font-weight: bold;
 }
-
-.footer-widget h4 {
+.footer-title h4 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #fff;
+  text-align: center;
+}
+.footer-items h4 {
   font-size: 20px;
   color: #fff;
   font-weight: 700;
   margin-bottom: 30px;
 }
-
-.footer-widget p {
+.footer-items p {
   margin-bottom: 15px;
-}
-
-.footer-widget p,
-.footer-widget p a {
   color: #fff;
 }
-
-.footer-widget ul {
+.footer-items a {
+  color: #fff;
+}
+.footer-items a:hover {
+  opacity: 0.75;
+}
+.white-logo {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.footer-ul {
   display: inline;
   max-width: 40%;
   float: left;
-  margin-right: 10%;
+  list-style-type: none;
 }
-
-.footer-widget ul li {
+.footer-ul li {
   margin-bottom: 10px;
 }
-
-.footer-widget ul li:last-child {
-  margin-bottom: 0px;
+.footer-items a {
+  text-decoration: none;
 }
-
-.footer-widget ul li a {
-  font-size: 15px;
-  color: #fff;
-  transition: all 0.3s;
-}
-
-.footer-widget a:hover {
-  opacity: 0.75;
-}
-
-footer .copyright-text p {
+.copyright-text p {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 0px;
-  color: #fff;
-}
-
-footer p a {
-  color: #fff;
-  transition: all 0.5s;
-}
-
-footer p a:hover {
-  opacity: 0.75;
   color: #fff;
 }
 
@@ -496,6 +469,9 @@ footer p a:hover {
   .prices-card-2 {
     margin-top: 0px;
   }
+  .prices-card-item {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -505,10 +481,69 @@ footer p a:hover {
   .orderPricesContainer {
     margin: 30px;
   }
+  footer .footer-title h4 {
+    color: #2a2a2a;
+  }
+  footer .search {
+    margin-bottom: 45px;
+  }
+  footer {
+    padding-top: 0px;
+    text-align: center;
+  }
+  .footer-items ul {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer-items h4 {
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+  footer #search input {
+    border: 1px solid #eee;
+    color: #afafaf;
+    background-color: #fff;
+    border-radius: 23px;
+    margin-bottom: 15px;
+    padding: 0px 30px;
+  }
+  footer #search button {
+    background-color: #fff;
+    color: #4b8ef1;
+  }
+  footer #search input::placeholder {
+    color: #2a2a2a;
+  }
 }
 @media (max-width: 576px) {
   .orderPricesContainer {
     margin: 30px;
+  }
+  .footer-top-section {
+    margin-top: -200px;
+  }
+  .footer-top-section h4 {
+    color: #1f1e1e;
+  }
+  .footer-top-section input {
+    background-color: #fff;
+    margin: auto auto 10px;
+    border-radius: 20px;
+  }
+  .footer-top-section input::placeholder {
+    color: #000000;
+  }
+  .footer-top-section button {
+    background-color: #fff;
+    color: #4b8ef1;
+  }
+  .footer-ul {
+    text-align: center;
+  }
+  .footer-items {
+    margin: auto;
   }
 }
 
