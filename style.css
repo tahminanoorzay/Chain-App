@@ -23,6 +23,51 @@
   border-radius: 20px;
 }
 
+/* Sign In Form */
+
+.show-modal {
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  z-index: 5;
+}
+
 /* Main section  */
 
 .main {
@@ -183,7 +228,7 @@ h2 {
 }
 .about .right-image {
   position: absolute;
-  z-index: 100;
+  z-index: 1;
 }
 
 .about:after {
@@ -282,7 +327,7 @@ h2 {
   text-align: left;
 }
 .quoteImg {
-  margin-right: 1000px;
+  margin-left: -300px;
 }
 .clientsP,
 .orderPricesP {

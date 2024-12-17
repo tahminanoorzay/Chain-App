@@ -99,3 +99,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Sign In Form
+
+const show_modal = document.querySelector(".show_modal");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const close_modal = document.querySelector(".close-modal");
+
+const displayModel = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+const hideModel = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+show_modal.addEventListener("click", displayModel);
+close_modal.addEventListener("click", hideModel);
+overlay.addEventListener("click", hideModel);
