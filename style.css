@@ -47,11 +47,37 @@
 .main .mainBtn {
   border-radius: 30px;
 }
-.main .hpMain {
+.main .mainDetails {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.mainImg {
+  animation: slideInFromRight 1s forwards;
+}
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /* Services & Features section  */
@@ -61,6 +87,19 @@
   background-repeat: no-repeat;
   text-align: center;
   margin-top: 240px;
+}
+.animitionSection {
+  animation: slideInFromTop 1s;
+}
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .servicesFeaturesH2 {
   color: #4b8ef1;
@@ -185,6 +224,7 @@ h2 {
   padding: 20px;
   justify-self: center;
   display: flex;
+  cursor: pointer;
 }
 .clientTxt {
   display: inline-block;
@@ -238,6 +278,12 @@ h2 {
 .clientBgTxt p {
   margin-top: 20px;
 }
+.clientPara {
+  text-align: left;
+}
+.quoteImg {
+  margin-right: 1000px;
+}
 .clientsP,
 .orderPricesP {
   line-height: 30px;
@@ -252,6 +298,16 @@ h2 {
   margin-top: 100px;
 }
 
+.clientAnimitionSection {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.clientAnimitionSection.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 /* Prices Cards section */
 
 .priceCardsContainer {
@@ -404,7 +460,7 @@ h2 {
 /* Media Queries */
 
 /* @media (min-width: 1200px) and(max-width: ) {
-  .main .hpMain {
+  .main .mainDetails {
     align-items: flex-start;
     text-align: left;
   }
@@ -418,7 +474,7 @@ h2 {
     margin-top: 50px;
     display: block;
   }
-  .main .hpMain {
+  .main .mainDetails {
     margin-top: 0;
     text-align: center;
     align-items: center;

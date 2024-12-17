@@ -39,16 +39,63 @@ window.onscroll = function () {
 
 // Change Clients details
 
-let clientDetails = document.getElementsByClassName("clientDetails");
-let clientPara = document.getElementsByClassName("clientPara");
+document.addEventListener("DOMContentLoaded", () => {
+  let clientData = [
+    {
+      paragraph:
+        "“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”",
+      name: "David Martino",
+      details: "CEO of David Company",
+    },
+    {
+      paragraph:
+        "“CTO, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”",
+      name: "Jake H. Nyo",
+      details: "CTO of Digital Company",
+    },
+    {
+      paragraph:
+        "“May, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”",
+      name: "May C.",
+      details: "Founder of Catherina Co.",
+    },
+    {
+      paragraph:
+        "“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”",
+      name: "Random Staff",
+      details: "Manager, Digital Company",
+    },
+    {
+      paragraph:
+        "“Mark, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”",
+      name: "Mark Am",
+      details: "CTO, Amber Do Company",
+    },
+  ];
 
-let clientParagraphs = [
-  "“CTO, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”",
-  "“May, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”",
-  "“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”",
-  "“Mark, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”",
-];
+  let clients = document.querySelectorAll(".customClient");
+  let clientPara = document.querySelector(".clientPara");
+  let clientAnimitionSection = document.querySelector(
+    ".clientAnimitionSection"
+  );
+  let clientName = document.querySelector(".clientName");
+  let clientDetails = document.querySelector(".clientDetails");
 
-clientDetails.addEventListener("click", () => {
-  clientDetails.innerHtml = clientParagraphs[0];
+  clientPara.textContent = clientData[0].paragraph;
+  clientName.textContent = clientData[0].name;
+  clientDetails.textContent = clientData[0].details;
+  clientAnimitionSection.classList.add("show");
+
+  clients.forEach((client, index) => {
+    client.addEventListener("click", () => {
+      clientAnimitionSection.classList.remove("show");
+
+      setTimeout(() => {
+        clientPara.textContent = clientData[index].paragraph;
+        clientName.textContent = clientData[index].name;
+        clientDetails.textContent = clientData[index].details;
+        clientAnimitionSection.classList.add("show");
+      }, 200);
+    });
+  });
 });
